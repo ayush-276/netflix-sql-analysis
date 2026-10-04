@@ -2,9 +2,9 @@
 
 An end-to-end SQL project that explores Netflix's content library and answers business questions about **content mix, genres, countries, viewership, engagement and profitability**, using MySQL.
 
-!\[MySQL](https://img.shields.io/badge/MySQL-8.0+-blue) !\[SQL](https://img.shields.io/badge/Language-SQL-orange) !\[Status](https://img.shields.io/badge/Status-Completed-green)
+![MySQL](https://img.shields.io/badge/MySQL-8.0+-blue) ![SQL](https://img.shields.io/badge/Language-SQL-orange) ![Status](https://img.shields.io/badge/Status-Completed-green)
 
-\---
+
 
 ## Table of Contents
 
