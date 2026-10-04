@@ -55,37 +55,37 @@ See [`data/README.md`](data/README.md) for the full column dictionary.
 
 ```mermaid
 erDiagram
-    NETFLIX ||--o| NETFLIX\_VIEWERSHIP : "show\_id"
-    NETFLIX ||--o| NETFLIX\_CONTENT\_COSTS : "show\_id"
+    NETFLIX ||--o| NETFLIX_VIEWERSHIP : "show_id"
+    NETFLIX ||--o| NETFLIX_CONTENT_COSTS : "show_id"
 
     NETFLIX {
-        varchar show\_id PK
+        varchar show_id PK
         varchar type
         varchar title
         varchar director
         varchar cast
         varchar country
-        varchar date\_added
-        varchar release\_year
+        varchar date_added
+        varchar release_year
         varchar rating
         varchar duration
-        varchar listed\_in
+        varchar listed_in
         varchar description
     }
-    NETFLIX\_VIEWERSHIP {
-        varchar show\_id FK
+    NETFLIX_VIEWERSHIP {
+        varchar show_id FK
         varchar type
-        int release\_year
-        int total\_views\_millions
-        int avg\_watch\_time\_minutes
-        varchar peak\_region
+        int release_year
+        int total_views_millions
+        int avg_watch_time_minutes
+        varchar peak_region
     }
-    NETFLIX\_CONTENT\_COSTS {
-        varchar show\_id FK
+    NETFLIX_CONTENT_COSTS {
+        varchar show_id FK
         varchar type
-        int production\_cost\_million\_usd
-        int marketing\_cost\_million\_usd
-        int estimated\_revenue\_million\_usd
+        int production_cost_million_usd
+        int marketing_cost_million_usd
+        int estimated_revenue_million_usd
     }
 ```
 
@@ -99,8 +99,8 @@ netflix-sql-analysis/
 ├── data/
 │   ├── README.md                    # column dictionary
 │   ├── netflix.csv
-│   ├── netflix\_viewership.csv
-│   └── netflix\_content\_costs.csv
+│   ├── netflix_viewership.csv
+│   └── netflix_content_costs.csv
 ├── sql/
 │   ├── 01\_database\_setup.sql        # create DB, tables, load data, clean, add keys
 │   ├── 02\_data\_analysis\_queries.sql # Q1-Q17
